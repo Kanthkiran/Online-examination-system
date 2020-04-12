@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>quiz in Javascript </title>
+	<link rel="stylesheet" href="4.css">
+</head>
+<body>
+    <div id="menu" algin="middle" >
+<center><a href="12.html" style="margin-right:0px: font-size:13px;font-family: Tohama,Geneva,Sans-serif;">Registration</a>   |
+<a href="a" style="margin-right:0px: font-size:13px;font-family: Tohama,Geneva,Sans-serif;">Examination rules</a>         |
+<a href="a" style="margin-right:0px: font-size:13px;font-family: Tohama,Geneva,Sans-serif;">Result</a>                                |
+
+<a href="231.html" style="margin-right:0px: font-size:13px;font-family: Tohama,Geneva,Sans-serif;">Objective</a>                          |
+<a href="23.html" style="margin-right:0px: font-size:13px;font-family: Tohama,Geneva,Sans-serif;">Subjective</a>                         |
+<a href="login1.html" style="margin-right:0px: font-size:13px;font-family: Tohama,Geneva,Sans-serif;">Logout</a>
+</div>              
+ <div class="quiz-container">
+    <div class="question-number">
+       <h3>Question <span class="question-num-value"></span> of <span class="total-question"></span></h3>
+    </div>
+    <div class="question">
+      
+    </div>
+    <div class="options">
+       <div id="0" class="option1" onclick="check(this)"></div>
+       <div id="1" class="option2" onclick="check(this)"></div>
+       <div id="2" class="option3" onclick="check(this)"></div>
+       <div id="3" class="option4" onclick="check(this)"></div>
+    </div>
+    <div class="button">
+       <button type="button" class="btn" onclick="next()">Next</button>
+    </div>
+    <div class="answers-tracker">
+       
+    </div>
+ </div>
+ 
+ <div class="quiz-over">
+   <div class="box">
+     <h1>
+       Good Try!<br>
+      You Got <span class="correct-answers"></span> out of <span class="total-question2"></span> answers correct! <br>
+      That's <span class="percentage"></span>
+     </h1>
+     <button type="button" onclick="tryAgain()">TryAgain</button>
+   </div>
+ </div>
+ <script src="4.js"></script>
+
+</body>
+</html>
